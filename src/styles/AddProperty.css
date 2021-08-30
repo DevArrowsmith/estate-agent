@@ -1,3 +1,25 @@
 .AddProperty {
-  padding: 0 20px;
+    padding: 0 20px;
+}
+
+.AddProperty-form {
+    width: fit-content;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.AddProperty-form>label {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.AddProperty-form>label>input, .AddProperty-form>label>select{
+    margin-left: 20px;
+    font-family: 'Major Mono Display', monospace;
+}
+
+.AddProperty-submit-button{
+  background-color: #FFFFFF;
+  font-family: 'Major Mono Display', monospace;
 }
