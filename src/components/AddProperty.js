@@ -1,5 +1,6 @@
 import { React, useState } from "react";
 import "../styles/AddProperty.css";
+import postProperty from "../controllers/postProperty";
 
 const AddProperty = () => {
   const initialState = {
@@ -25,8 +26,9 @@ const AddProperty = () => {
     });
   };
 
-  const handleAddProperty = (event) => {
+  const handleAddProperty = async (event) => {
     event.preventDefault();
+    await postProperty(propertyDetails);
   };
 
   return (
